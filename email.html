@@ -1,0 +1,60 @@
+<!-- <html>
+<head>
+<title> Forms </title>
+</head>
+<body>
+<FORM METHOD="POST" action="http://mgokalp.local:8080/cgi-bin/email">
+Choose your option
+<SELECT NAME="Selection list" SIZE=1>
+<OPTION>First
+<OPTION SELECTED> Default
+<OPTION>Third
+</SELECT> <br>
+<INPUT TYPE="HIDDEN" NAME="NotSeen" SIZE=10>
+Enter Text Here <INPUT TYPE="TEXT" NAME="Text Input" SIZE=20 MAXLENGTH=25>
+   Enter Your Password here
+<INPUT TYPE="PASSWORD" NAME="Pswd" SIZE=6 MAXLENGTH=12> <br>
+Pick one of the following <br>
+<INPUT TYPE="RADIO" NAME="Radio" VALUE="First"> First <BR>
+<INPUT TYPE="RADIO" NAME="Radio" VALUE="Second" CHECKED> Second <br>
+Pick from of the following <br>
+<INPUT TYPE="CHECKBOX" NAME="check" VALUE="First"> First
+<INPUT TYPE="CHECKBOX" NAME="check" VALUE="Second" CHECKED> Second
+<INPUT TYPE="CHECKBOX" NAME="check" VALUE="third" CHECKED> Third <br>
+Enter your comments <TEXTAREA NAME="Comments" ROWS=2 COLUMNS=60>
+ </textarea>
+<p>When done, press the button below <br>
+<INPUT TYPE="Submit" NAME="Submit This Form">
+<INPUT TYPE="Reset" NAME="Clear">
+</FORM>
+</body>
+</html> -->
+
+<html>
+<head>
+<title>Email to Melis Gokalp</title>
+<body>
+<h2 align="center">Email to Melis Gokalp</h2>
+<form method="POST" action="http://mgokalp.local:8080/cgi-bin/email"
+<input type="hidden"
+        name="recipient" value="boutell">
+<table align="center"
+        border="0" cellpadding="5" cellspacing="5">
+<tr><td>Your Name</td>
+<td><input name="name"/></td></tr>
+<tr><td>Your Email Address</td>
+<td><input name="email"/></td></tr>
+<tr><td>Subject</td>
+<td><input name="subject"/></textarea></td></tr>
+<tr><td colspan="2">Text:</td></tr>
+<tr><td colspan="2">
+<textarea name="content" rows="10" cols="40"></textarea>
+</td></tr>
+<tr><td colspan="2" align="center">
+<input type="submit" value="Send Email"></td></tr>
+<tr><td colspan="2" align="center">
+<a href="/email/">Cancel</a></td></tr>
+</table>
+</form>
+</body>
+</html>
